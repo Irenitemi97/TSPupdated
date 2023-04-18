@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSP</title>
+    <!-- link to boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- link to SwiperJS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- link to Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Link to css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container nav_container">
+            <a href="index.html" class="nav_logo"><img src="Images/tsp logo .png" alt="nav_logo"></a>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibition">Exhibition</a></li>
+            </ul>
+            <ul class="nav_icons">
+                <li><a href="https://instagram.com/tobilobasamuel?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class='bx bxl-instagram'></i></a></li>
+                <li><a href="" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+
+            </ul>
+            <button class="nav__toggle-btn" id="navToggleOpen"><i class='bx bx-down-arrow-alt'></i></button>
+            <button class="nav__toggle-btn" id="navToggleClose"><i class='bx bx-up-arrow-alt'></i></button>
+        </div>
+    </nav>
+    <!-- ================================== END OF NAVBAR======================================== -->
+
+    <!--              gallery              -->
+
+    <section id="gallery">
+        <div class="container gallery_container">
+            <div class="gallery_head">
+                <h2 class="gallery_title">My Gallery</h2>
+                <div class="empty gallery_empty"></div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, architecto, reprehenderit
+                expedita officiis illum aperiam debitis doloribus quos iure beatae unde nihil dolorem ex doloremque
+                at soluta? Eveniet, perspiciatis corporis.
+            </p>
+            <div class="full_img" id="fullImgBox">
+                <img src="./Images/img7.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="image_gallery">
+                <img src="./Images/img1.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img2.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img3.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img4.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img5.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img6.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img7.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img8.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img9.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img10.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img11.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img12.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img13.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img14.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img15.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img16.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img17.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img18.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img19.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img20.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img21.jpg" onclick="openFullImg(this.src)">
+                <img src="./Images/img22.jpg" onclick="openFullImg(this.src)">
+                <!-- <video src="./Images/vid1.mp4"></video>
+                <video src="./Images/vid2.mp4"></video>
+                <video src="./Images/vid3.mp4"></video> -->
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container footer_container">
+            <div class="hire_me">
+                <h2 class="footer_title">Hire Me</h2>
+            </div>
+            <div class="footer_head">
+                <h2 class="footer_title">adewunmi.tobiloba8@gmail.com</h2>
+                <a href="mailto:adewunmi.tobiloba8@gmail.com" class=""><i
+                        class='bx bx-right-top-arrow-circle footer_btn'></i></a>
+            </div>
+            <ul class="footer_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#exhibition">Exhibition</a></li>
+            </ul>
+            <div class="footer text-center">
+                <div class="FSI footer-icons" style="text-align: center;">
+                    <a href="https://instagram.com/tobilobasamuel?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="" target="_blank"><i class='bx bxl-instagram'></i></a>
+                </div>
+                <p class="footer-copyright">Copyright © 2023 <a href="https://github.com/Irenitemi97"> Adediran Sulyman.</a></p>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
